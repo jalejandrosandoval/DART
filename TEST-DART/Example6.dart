@@ -1,15 +1,7 @@
-main(){
+void main(){
   
-  TestClass _test = new TestClass();
-  _test.Name = "Nombres";
+  List prueba = ["1", "a"];
 
-  _test._print(); 
-}
-
-class TestClass{
-  String Name = "";
+  prueba.forEach((x) => print(x));
   
-  void _print(){
-    print(Name);  
-  }
 }
