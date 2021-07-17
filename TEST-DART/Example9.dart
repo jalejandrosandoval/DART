@@ -1,4 +1,4 @@
-void main(){
+main(){
 
   //Operadores de Asignación
 
@@ -12,6 +12,8 @@ void main(){
   int _a = 10;
   int? _b;
 
+  print(_a);
+  
   int _c = _b ?? a;
   print(_c);
 
