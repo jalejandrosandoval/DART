@@ -1,7 +1,11 @@
+import 'dart:io';
+
 main(){
 
+  print("¿Cómo es la Data? ");
   String _data = "Alejandro Sandoval";
-  initState(_data);
+  String _data1  = stdin.readLineSync()!;
+  initState(_data1);
 
 }
 
@@ -13,7 +17,7 @@ void initState(String _params ) {
   print("Creando el Stream...");
 
   stream.listen((data) {
-    print("Se recibe la Data: "+ data);
+    print("Se recibe la Data: $data");
   }, onDone: () {
     print("");
     print("Tarea Completada (Y)");
